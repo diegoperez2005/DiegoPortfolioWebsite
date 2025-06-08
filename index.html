@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Responsive Portfolio Website Design</title>
     <link rel="stylesheet" href="style.css">
     <!----Font awesome cdn fron icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="hero-header">
@@ -30,7 +31,52 @@
                     </ul>
                 </nav>
             </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm a <span class="input">Mechanical Engineer</span></h5>
+                    <h1>Diego Perez</h1>
+                    <p>A Sophomore at Washington University in St. Louis, pursuing a Bachelors of Science in Mechancial Engineering with minors in Computer Science and Robotics.    
+                       
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download Resume</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands  fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands  fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands  fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands  fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!---Typed js cdn for typing effect--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar**/
+        var togglebtn=document.querySelector('.togglebtn');
+        var nav=document.querySelector('.navlinks');
+        var links=document.querySelectorAll('.navlinks li');
+
+        togglebtn.addEventListener('click', function() {
+            this.classList.toggle('click');
+            nav.classList.toggle('open');
+        })
+
+
+        var typed = new Typed(".input",{
+            strings: ["Mechanical Engineer", "Web Developer", "Product Design Engineer"],
+            typeSpeed:60,
+            backSpeed:55,
+            loop:true
+        });
+    </script>
 </body>
 </html>
+
