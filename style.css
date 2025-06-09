@@ -211,3 +211,204 @@ nav .navlinks li a{
     }
    
 }
+
+/* Portfolio Page Styles */
+.portfolio-container {
+    padding: 100px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 1.5rem;
+    background: var(--bg-color);
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.project-info .year {
+    margin: 0.5rem 0 0;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Project Detail Page Styles */
+.project-detail-container {
+    padding: 100px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-header {
+    margin-bottom: 60px;
+}
+
+.project-header h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0 0 15px 0;
+}
+
+.project-header .project-category {
+    color: #007ced;
+    font-size: 1.2rem;
+}
+
+.project-detail-container .project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.project-detail-container .project-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-detail-container .project-info h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 40px 0 20px 0;
+}
+
+.project-detail-container .project-info h2:first-child {
+    margin-top: 0;
+}
+
+.project-detail-container .project-info p {
+    color: #e5e5e5;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-detail-container .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-detail-container .project-tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .project-detail-container .project-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-container {
+        padding: 60px 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    .project-info {
+        padding: 1rem;
+    }
+    
+    .project-info h3 {
+        font-size: 1.1rem;
+    }
+}
+
+.project-info.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    background: var(--bg-color);
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.35rem;
+    color: #fff;
+    font-weight: 400;
+    flex: 1;
+    text-align: left;
+}
+
+.year {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-left: 1.5rem;
+    white-space: nowrap;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .project-info.row {
+        padding: 1rem 1rem 0.5rem 1rem;
+    }
+    .project-title {
+        font-size: 1.1rem;
+    }
+    .year {
+        font-size: 1rem;
+    }
+}

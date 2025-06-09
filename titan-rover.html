@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Vex Rover - Diego Perez Pijuan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Diego Perez Pijuan</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="project-detail-container">
+                <div class="project-header">
+                    <h1>Titan Vex Rover</h1>
+                    <p class="project-category">Neocity Mekaknights</p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/titan-rover.jpg" alt="Titan Vex Rover">
+                    </div>
+                    
+                    <div class="project-info">
+                        <h2>Project Overview</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        
+                        <h2>My Role</h2>
+                        <p>Lead Mechanical Engineer</p>
+                        
+                        <h2>Technologies Used</h2>
+                        <div class="project-tags">
+                            <span>3D Printing</span>
+                            <span>Autodesk Inventor</span>
+                            <span>Fusion 360</span>
+                            <span>Machining</span>
+                            <span>Pneumatic Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var togglebtn=document.querySelector('.togglebtn');
+        var nav=document.querySelector('.navlinks');
+        var links=document.querySelectorAll('.navlinks li');
+
+        togglebtn.addEventListener('click', function() {
+            this.classList.toggle('click');
+            nav.classList.toggle('open');
+        })
+    </script>
+</body>
+</html> 
