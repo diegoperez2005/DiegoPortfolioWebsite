@@ -121,7 +121,7 @@ nav .navlinks li a{
     font-size: 3rem;
 }
 .hero-text p{
-    color: #e5e5e5;
+    color: #222;
    
 }  
 .btn-group{
@@ -142,7 +142,7 @@ nav .navlinks li a{
     border-color: #007ced;
 }
 .hero-text .social i{
-    color: #e5e5e5;
+    color: #222;
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
@@ -289,7 +289,7 @@ nav .navlinks li a{
 }
 
 .project-header h1 {
-    color: #fff;
+    color: #222;
     font-size: 3rem;
     margin: 0 0 15px 0;
 }
@@ -313,7 +313,7 @@ nav .navlinks li a{
 }
 
 .project-detail-container .project-info h2 {
-    color: #fff;
+    color: #222;
     font-size: 1.8rem;
     margin: 40px 0 20px 0;
 }
