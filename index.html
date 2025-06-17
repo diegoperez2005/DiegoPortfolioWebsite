@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website Design</title>
+    <title>Diego Perez Pijuan - Mechanical Engineer</title>
     <link rel="stylesheet" href="style.css">
     <!----Font awesome cdn fron icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -24,36 +24,95 @@
                         <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
-            <div class="container">
-                <div class="hero-pic">
-                    <img src="images/main_photo.jpg" alt="profile pic">
-                </div>
-                <div class="hero-text">
-                    <h5>Hi I'm a <span class="input">Mechanical Engineer</span></h5>
-                    <h1>Diego Perez</h1>
-                    <p>A Sophomore at Washington University in St. Louis, pursuing a Bachelors of Science in Mechancial Engineering with minors in Computer Science and Robotics.    
-                       
-                    </p>
-                    <div class="btn-group">
-                        <a href="#" class="btn active">Download Resume</a>
-                        <a href="#" class="btn">Contact</a>
-                    </div>
 
-                    <div class="social">
-                        <a href="#"><i class="fa-brands  fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands  fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands  fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands  fa-github"></i></a>
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h5>Hi I'm a <span class="input">Mechanical Engineer</span></h5>
+                        <h1>Diego Perez</h1>
+                        <p>A Sophomore at Washington University in St. Louis, pursuing a Bachelors of Science in Mechanical Engineering with minors in Computer Science and Robotics.</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn active">Download Resume</a>
+                            <a href="#contact" class="btn">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/diego-perez-pijuan-425634244/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-pic">
+                        <img src="images/main_photo.jpg" alt="profile pic">
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <a href="grizzly-rover.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/grizzly-rover.png" alt="Grizzly URC Rover">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Grizzly URC Rover</h3>
+                            <span class="year">2024</span>
+                            <p class="project-description">University Rover Competition project focusing on autonomous navigation and manipulation.</p>
+                        </div>
+                    </a>
+
+                    <a href="titan-rover.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/titan-rover.jpg" alt="Titan Vex Rover">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Titan Vex Rover</h3>
+                            <span class="year">2023</span>
+                            <p class="project-description">VEX Robotics competition project featuring advanced control systems and mechanical design.</p>
+                        </div>
+                    </a>
+
+                    <a href="washu-vtol.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/washu-vtol.png" alt="WashU VTOL logo">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">WashU VTOL</h3>
+                            <span class="year">2025</span>
+                            <p class="project-description">WashU VTOL is an organiztion that focus on creating VTOL aircraft to compete in collegiate competions.</p>
+                        </div>
+                    </a>
+
+                    <a href="titan-rover.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/titan-rover.jpg" alt="Titan Vex Rover">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Cryostat Hoist System</h3>
+                            <span class="year">2024</span>
+                            <p class="project-description">Project for imec USA.</p>
+                        </div>
+                    </a>
+
+                    <a href="titan-rover.html" class="project-card">
+                        <div class="project-image">
+                            <img src="images/titan-rover.jpg" alt="Titan Vex Rover">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Titan Vex Rover</h3>
+                            <span class="year">2023</span>
+                            <p class="project-description">VEX Robotics competition project featuring advanced control systems and mechanical design.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
         </div>
     </div>
     <!---Typed js cdn for typing effect--->
@@ -75,6 +134,16 @@
             typeSpeed:60,
             backSpeed:55,
             loop:true
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
