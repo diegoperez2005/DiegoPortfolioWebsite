@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Diego Perez Pijuan</title>
+    <title>About - Diego Perez Pijuan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
@@ -25,22 +25,120 @@
                     <ul class="navlinks">
                         <li><a href="index.html">Projects</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
 
+            <div class="about-container">
+                <section class="about-hero">
+                    <h1>Diego Perez Pijuan</h1>
+                    <p class="about-description">
+                        I am currently a sophomore at Washington University in St. Louis, set to graduate in May 2027. I am pursuing a major in Mechanical Engineering with minors in Computer Science and Robotics. My career goal and passion is to positively contribute to the lives of others using my background in mechanical engineering, robotics, and software development.
+                    </p>
+                    <div class="about-links">
+                        <a href="#" class="about-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                        <a href="#" class="about-link">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            Resume
+                        </a>
+                    </div>
+                </section>
+
+                <section class="resume-section">
+                    <h2>Resume</h2>
+                    <a href="#" class="resume-download">
+                        <i class="fa-solid fa-download"></i>
+                        Click to Download
+                    </a>
+                </section>
+
+                <section class="experience-section">
+                    <h2>Experience</h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Mechanical Engineering Intern</h3>
+                            <span class="company">Company Name</span>
+                            <span class="location">Location</span>
+                            <span class="duration">Summer 2024</span>
+                        </div>
+                        <p class="experience-description">
+                            Description of your internship experience and key achievements.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="leadership-section">
+                    <h2>Leadership & Projects</h2>
+                    <div class="leadership-item">
+                        <div class="leadership-header">
+                            <h3>Project Name</h3>
+                            <span class="role">Role</span>
+                            <span class="duration">Duration</span>
+                        </div>
+                        <p class="leadership-description">
+                            Description of your leadership role and project achievements.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="organizations-section">
+                    <h2>Organizations</h2>
+                    <div class="organization-item">
+                        <h3>Organization Name</h3>
+                        <p class="organization-description">
+                            Description of your involvement and contributions to the organization.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="honors-section">
+                    <h2>Honors and Awards</h2>
+                    <div class="honor-item">
+                        <h3>Award Name</h3>
+                        <p class="honor-description">
+                            Description of the award and why you received it.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="certifications-section">
+                    <h2>Licenses and Certifications</h2>
+                    <div class="certification-item">
+                        <div class="certification-header">
+                            <h3>Certification Name</h3>
+                            <span class="issuer">Issuing Organization</span>
+                            <span class="date">Issued Date</span>
+                        </div>
+                        <p class="certification-description">
+                            Description of the certification and its relevance.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact-section">
+                    <h2>Want to get in touch?</h2>
+                    <p>If you have any questions, feel free to reach out!</p>
+                    <a href="mailto:your.email@example.com" class="contact-email">
+                        your.email@example.com
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
 
     <script>
-        /** creating button click show hide navbar**/
-        var togglebtn=document.querySelector('.togglebtn');
-        var nav=document.querySelector('.navlinks');
-        var links=document.querySelectorAll('.navlinks li');
+        var togglebtn = document.querySelector('.togglebtn');
+        var nav = document.querySelector('.navlinks');
+        var links = document.querySelectorAll('.navlinks li');
 
         togglebtn.addEventListener('click', function() {
             this.classList.toggle('click');
             nav.classList.toggle('open');
-        })
+        });
     </script>
 </body>
 </html> 
