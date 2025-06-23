@@ -43,16 +43,44 @@ header {
     backdrop-filter: blur(10px);
 }
 
-.logo {
+.header-inner {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo i {
-    color: var(--accent-color);
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text {
+    font-size: 25px;
+    font-weight: 700;
+    color:#000;
 }
 
 .navlinks {
@@ -485,6 +513,7 @@ header {
 
 .about-hero {
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .about-hero h1 {
@@ -505,6 +534,7 @@ header {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 
 .about-link {
@@ -523,6 +553,7 @@ header {
 
 .resume-section {
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .resume-section h2 {
@@ -555,6 +586,7 @@ header {
 .honors-section,
 .certifications-section {
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .experience-section h2,
